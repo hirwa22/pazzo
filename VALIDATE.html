@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" name="pass" id="pass">
+    <script>
+        var passwordValue = document.getElementById("pass").value;
+        if(passwordValue === ''){
+            setError(password,"password is required");
+        }
+        else if(passwordValue.length < 8){
+            setError(password,"password should be at least 8 characters");
+        }
+        else{
+            setSuccess(password,"correct password");
+        }
+    </script>
+</body>
+</html>

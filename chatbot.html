@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-display {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 60px;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-display"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script type="text/javascript">
+        function sendMessage() {
+        var userInput = document.getElementById("user-input").value;
+        if (userInput !== "") {
+            var chatDisplay = document.getElementById("chat-display");
+            chatDisplay.innerHTML += "<div>You: " + userInput + "</div>";
+            // You can replace the bot's response logic here
+            chatDisplay.innerHTML += "<div>Bot:I am a chatbot!</div>";
+            chatDisplay.scrollTop = chatDisplay.scrollHeight;
+            document.getElementById("user-input").value = "";
+        }
+}
+
+    </script>
+</body>
+</html>

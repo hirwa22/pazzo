@@ -1,0 +1,146 @@
+body{
+   background-image: url("/PHOTOS/download.jfif"),url("/PHOTOS/download (1).jfif"); 
+   background-position: left,right;
+   background-repeat: repeat-y,repeat-y;
+}
+header{
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.logo{
+    margin-top: unset;
+}
+.logo img{
+    width: 350px;
+    height: 250px;
+}
+main{
+    display: flex;
+    width: 500px;
+    height: 360px;
+    border: 5px solid yellow;
+    background: rgb(66, 189, 66);
+    margin-top: 100px;
+    margin-inline-start: 504px;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+main .login h1{
+    font-family: "Arial",sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    text-indent: 50px;
+    font-family: "Algerian",sans-serif;
+}
+main .login form input{
+    width: 220px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    font-family: "Arial",sans-serif;
+    text-align: left;
+    color: black;
+    font-style: italic;
+    padding: 10px;
+    cursor: text;
+    font-size: 18px;
+    box-shadow: 0px -10px 10px -2px rgb(221, 217, 217);
+    margin-left: 0px;
+}
+main .login form button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background: blue;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 2px -10px 10px 2px lightgrey;
+    margin-left: 10px;
+}
+main .login form button:hover{
+    transition: all 0.6s;
+    background: white;
+    color: blue;
+    box-shadow: 2px -10px 10px 2px lightgrey;
+}
+main .signup{
+    width: 260px;
+    height: 360px;
+    background: black;
+    border-radius: 30px 25px 25px 30px;
+}
+main .signup h1{
+    font-family: "Algerian",sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+    text-indent: 60px;
+}
+main .signup form input{
+    width: 220px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    font-family: "Arial",sans-serif;
+    text-align: left;
+    color: black;
+    font-style: italic;
+    padding: 10px;
+    cursor: text;
+    font-size: 18px;
+    box-shadow: 0px -10px 10px -2px rgb(221, 217, 217);
+    margin-left: 10px;
+}
+main .signup form button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background: blue;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 2px -10px 10px 2px lightgrey;
+    margin-left: 20px;
+}
+main .signup form button:hover{
+    transition: all 0.6s;
+    background: white;
+    color: blue;
+    box-shadow: 2px -10px 10px 2px lightgrey;
+}
+footer{
+    margin-top: 200px;
+    background-color: black;
+}
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+@media screen and (max-width:1024px){
+    main{
+        margin-inline-start: 20px;
+    }
+    .logo{
+        margin-top: unset;
+    }
+    .logo img{
+        margin-left: 50px;
+        width: 150px;
+        height: 60px;
+    }
+    header{
+        line-height: 50px;
+    }
+}
+  
+
+
