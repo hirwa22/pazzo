@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="logo1.jpeg" type="image/x-icon">
+    <style>
+    body{
+        padding: 20px;
+    }
+    header{
+        display: flex;
+        position: relative;
+        background-color: black;
+        border-radius: 11px;
+        padding: 2px;
+    }
+    header .logo1 img{
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    header .menu{
+        margin: 50px 200px;
+    }
+    header .menu a{
+        padding:7px;
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        font-family: "Arial",sans-serif;
+        text-decoration: none;
+    }
+    header .logo2 img{
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    main .mubiligi3 img{
+        margin-left: 300px;
+        margin-top: 80px;
+        width: 600px;
+        height: 280px;
+        border-radius: 20px;
+    }
+    .para{
+        text-align: justify;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    main .main-contents{
+        width: 90%;
+        height: 70%;
+        border-radius: 20px;
+        border: 5px solid black;
+        padding: 20px;
+        margin-left: 30px;
+    }
+    main .main-contents .first{
+        display: flex;
+
+    }
+    main .main-contents .second{
+        display: flex;
+    }
+    .SOD{
+        width: 40%;
+        height: 200px;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 8px;
+        background: lightslategray;
+        margin-bottom: 20px;
+    }
+    .MUP{
+        margin-left: 15%;
+        width: 40%;
+        height: 200px;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 8px;
+        background: lightgreen;
+    }
+    .NIT{
+        width: 40%;
+        height: 200px;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 8px;
+        background: lightgray;
+    }
+    .CSA{
+        margin-left: 15%;
+        width: 40%;
+        height: 200px;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 8px;
+        background: lightskyblue;
+    }
+    main .main-contents h1{
+        font-size: 15px;
+        border-bottom: 3px solid black;
+        border-radius: 20px;
+        padding: 4px;
+        
+    }
+    main .main-contents p{
+        font-size: 20px;
+        font-weight: bold;
+    }  
+    footer{
+            background-color: black;
+            border-radius: 10px;
+            margin-top: 100px;
+    }
+    footer p{
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            color: white;
+    }
+            /*custom scrollbar*/ 
+        ::-webkit-scrollbar{
+            width: 15px; 
+        }
+        ::-webkit-scrollbar-track{
+            background: rgb(116, 100, 173);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: linear-gradient(rgb(255, 0, 0),rgb(0, 255, 0));
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+		<div class="logo1">
+			<img src="logo1.jpeg">
+		</div>
+		<div class="menu">
+			<a href="index.html">Home</a>
+			<a href="about.html">About us</a>
+			<a href="staff.html">Staff</a>
+			<a href="education.html">Education</a>
+			<a href="announcement.html">Announcement</a>
+			<a href="contact.html">Contact us</a>
+		</div>
+		<div class="logo2">
+			<img src="logo2.jpg">
+		</div>
+	</header>
+    <main>
+        <div class="mubiligi3">
+            <img src="YES.jpg">
+        </div>
+            <p class="para">Courses provided in each trades,these are Software development,Multimedia and production,Networking and Internet Technology,and Computer System and Architecture.</p>
+            <div class="main-contents">
+                <div class="first">
+                    <div class="SOD">
+                        <h1>A.SOFTWARE DEVELOPMENT(SOD)</h1>
+                        <P>You'll find there courses like<br>Web design,frontend and Backend<br>design,Game design,Mobile apps<br>
+                            design,database development system,<br>Window server,...
+                        </P>
+                    </div>
+                    <div class="MUP">
+                        <h1>B.MULTIMEDIA AND PRODUCTION(MUP)</h1>
+                        <p>You'll find there courses like<br>Camera operating,Video editing,Sound editing,<br>
+                            Script writing,Lighting,...
+                        </p>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="NIT">
+                        <h1>C.NETWORKING AND INTERNET TECHNOLOGY(NIT)</h1>
+                        <p>You'll learn about WLAN setting up,<br>Internet of things,CCTV system installation,<br>Voice over Internet Protocol,C and C<sup>++</sup> Programming,...
+                        </p>
+                    </div>
+                    <div class="CSA">
+                        <h1>D.COMPUTER SYSTEM AND ARCHITECTURE(CSA)</h1>
+                        <p>You'll be trained in Embedded system ,<br>Telephone maintenance,C and C<sup>++</sup> Programming,<br>Computer peripherals,Robotics,...</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <p>copyright&copy;2024 all right reserved</p>
+    </footer>
+</body>
+</html>

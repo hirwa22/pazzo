@@ -1,335 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-        body{
-            background-image: url("patty.png"),url("patty.png");
-            background-position: left top,right top;
-            background-repeat:no-repeat,no-repeat;
-        }
-        .all{
-            display: block;
-            margin-top: 200px;
-        }
-        .image-upload{
-            text-align: center;
-            margin-top: 0%;
-        }
-        .image-upload img{
-           width: 250px;
-           height: 250px;
-           border-radius: 50%;
-           border: 3px solid black;  
-        }
-        .container form{
-            padding-top: 15px;
-            margin: 50px 335px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            width: 58%;
-            height: 35%;
-            background: rgb(92, 69, 69);
-            position: absolute;
-            border-radius: 15px;
-            box-shadow: 0 0 40px rgb(47, 2, 248);
-        }
-        .container form .second{
-            margin-bottom: -23px;
-            margin-left: 20px;
-        }
-        .container form input::placeholder{
-            font-size: 18px;
-            font-weight: 500;
-            font-family: "poppins",sans-serif;
-            color: black;
-        }
-        .container form label{
-            font-size: 18px;
-            font-weight: bold;
-            font-family: "poppins",sans-serif;
-            background: white;
-            color:  rgb(5, 3, 3);
-            padding: 22px 76px;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgb(248, 224, 2);
-            border: 2px solid black;
-        }
-        .container form label:hover{
-            border: 2px solid rgb(255, 251, 4);
-        }
-        .container form input{
-            width: 305px;
-            height: 50px;
-            padding: 5px;
-            border-radius: 10px;
-            text-align: left;
-            cursor: text;
-            font-size: 20px;
-            outline: none;
-            box-shadow: 0 0 10px rgb(248, 224, 2);
-        }
-        .container form input[type="file"]{
-            display: none;
-        }
-        .container form input:focus{
-            transition: 0.8s;
-            border: 2px solid yellow;
-        }
-        .container form button{
-            width: 200px;
-            height: 50px;
-            border: none;
-            background: blue;
-            color: white;
-            padding: 3px 10px;
-            cursor: pointer;
-            border-radius: 30px;
-            box-shadow: 0 0 15px rgb(248, 247, 247);
-            margin-bottom: 15px;
-            margin-left: 10px;
-            font-weight: bold;
-            font-family: "algerian",sans-serif;
-            font-size: 35px;
-        }
-        .container form button:hover{
-            transition: all 0.8s;
-            background: white;
-            color: blue;
-            box-shadow: 0 0 15px rgb(0, 0, 0);
-        }
-        .comment{
-            display: flex;
-            flex-direction: column;
-            margin-top: 400px;
-            margin-left: 560px;
-            border: 3px solid black;
-            border-radius: 10px;
-            padding: 8px;
-            position: relative;
-            box-shadow: 0 0 50px black;
-            height: 360px;
-            width: 416px;
-        }
-        .comment form input[type="text"]{
-            width: 400px;
-            border-radius: 10px;
-            resize: none;
-            border: 2px solid black;
-            padding: 5px;
-            font-size: 20px;
-            font-weight: 500;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            outline: none;
-        }
-        .comment form input[type="text"]:focus{
-            border: 2px solid blue;
-        }
-        .comment form input[type="text"]::placeholder{
-            font-size: 18px;
-            font-weight: 500;
-            font-family: "poppins",sans-serif;
-            color: black; 
-        }
-        .comment form textarea{
-            width: 400px;
-            height: 200px;
-            border-radius: 10px;
-            resize: none;
-            border: 2px solid black;
-            padding: 5px;
-            font-size: 20px;
-            font-weight: 450;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            outline: none;
-        }
-        .comment form textarea:focus{
-            border: 3px solid blue;
-        }
-        .comment form label{
-            font-size: 15px;
-            font-weight: 700;
-            font-family: "poppins",sans-serif;
-            color: black;
-            line-height: 40px; 
-        }
-
-        .comment  button.myBtn1{
-            margin-left: 8px;
-            margin-top: -50px;
-            font-weight: 400;
-            width: 200px;
-            height: 50px;
-            border: none;
-            background: black;
-            color: white;
-            padding: 3px 10px;
-            cursor: pointer;
-            border-radius: 20px;
-            box-shadow: 0 0 16px rgb(0, 0, 0);
-            font-family: "algerian",sans-serif;
-            font-size: 35px;
-        }
-        .comment  button.myBtn1:hover{
-            transition: all 0.8s;
-            background: white;
-            color: black;
-            box-shadow: 0 0 16px rgb(0, 0, 0);
-        }
-        .comment form button{
-            margin-top: 10px;
-            margin-left: 215px;
-            font-weight: 400;
-            width: 200px;
-            height: 50px;
-            border: none;
-            background: black;
-            color: white;
-            padding: 3px 10px;
-            cursor: pointer;
-            border-radius: 20px;
-            box-shadow: 0 0 16px rgb(0, 0, 0);
-            font-family: "algerian",sans-serif;
-            font-size: 35px;
-        }
-        .comment form button:hover{
-            transition: all 0.8s;
-            background: white;
-            color: black;
-            box-shadow: 0 0 16px rgb(0, 0, 0);
-        }
-        /*custom scrollbar*/ 
-        ::-webkit-scrollbar{
-            width: 15px; 
-        }
-        ::-webkit-scrollbar-track{
-            background: rgb(116, 100, 173);
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb{
-            background: linear-gradient(rgb(255, 0, 0),rgb(0, 255, 0));
-            border-radius: 10px;
-            cursor: pointer;
-        }
-        @media screen and (max-width:1024px){
-        .container form{ 
-            width: 490px;
-            height: 31%;
-            margin-left: -3px;
-            margin-top: -120px;
-        }
-        .comment form{
-            height: 250px;
-        }
-        .image-upload img{
-            width: 190px;
-            height: 190px;
-            border-radius: 50%;
-            margin-bottom: 200px;
-        }
-        .container form input{
-            width: 170px;
-            height: 40px;
-        }
-        .container form button{
-           
-            font-size: 25px;
-            width: 90px;
-            border-radius: 30px;
-            margin-right: 10px;
-        }
-        .container form label{
-            font-size: 14px;
-            padding: 16.5px 26.5px;
-        }
-        .container form .first{
-            padding-top: 0px;
-            margin-left: 10px;
-        }
-        .container form .second{
-            margin-bottom: -20px;
-        }
-        .container form input::placeholder{
-            font-size: 12px;
-            font-weight: bold;
-       }
-       .comment{
-        margin-top: 165px;
-        margin-left: 20px;
-       }
-       .comment  button.myBtn1{
-        margin-top: 56px;
-       }
-       ::-webkit-scrollbar{
-        width: 10px;
-       }
-      
-    }
-    </style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		header{
+			text-align: center;
+		}
+		header .menu a{
+			padding: 10px;
+			color: black;
+			text-decoration: none;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		#first{
+			height: 100vh;
+			width: 100%;
+			background-color: yellow;
+		}
+		#second{
+			height: 100vh;
+			width: 100%;
+			background-color: green;
+		}
+		#third{
+			height: 100vh;
+			width: 100%;
+			background-color: red;
+		}
+	</style>
 </head>
 <body>
-<div class="all">
-        <div class="image-upload">
-          <img src="profile.png" id="profile-pic">  
-        </div>
-        <div class="container">
-            <form action="https://api.web3forms.com/submit" method="POST">
-            <div class="first">
-                <input type="hidden" name="access_key" value="f71002b5-35f6-4bdd-874d-ec15ba01a471">
-                <input type="text" id="name" name="Name:" placeholder="Name/Amazina yawe..." required="required"><br><br>
-                <input type="email" id="email" name="Email:" placeholder="Email address/Imeri yawe..." required="required"><br><br>
-                <input type="tel" id="tel" name="Telephone number:" placeholder="Telephone number/Nomero yawe..."  required="required"><br><br>
-            </div>
-            <div class="second">
-                <label for="file">Upload your image</label><br>
-                <input type="file" id="file" name="His/her image file:" accept="image/jpeg, image/png, image/jpg" required="required"><br><br>
-                <input type="text" id="pick" name="Pickup location:" placeholder="Pickup location/Aho uri..." required="required"><br><br>
-                <input type="text" id="destiny" name="Destination:" placeholder="Destination/Aho ushaka kujya..." required="required"><br><br>
-            </div>
-                <button id="myBtn" type="submit">send</button>
-            </form>
-            <script>
-                document.getElementById("myBtn").addEventListener("click",function(){
-                    //form values
-                    var a = document.getElementById("name").value;
-                    var b = document.getElementById("email").value;
-                    var c = document.getElementById("tel").value;
-                    var d = document.getElementById("file").value;
-                    var e = document.getElementById("pick").value;
-                    var f = document.getElementById("destiny").value;
-                    //output
-                    alert(`Hello,your Name is ${a},your Email address is ${b},your Telephone number is ${c},your Image file is ${d},your Pickup location is ${e} and your Destination is ${f};check that you've entered a correct data🔎🔍,YOU ARE SUCCESSFUL!✔ WAIT A BIKE FOR FEW MINUTES✈🎈🙏👍`);
-                })
-                 let profilePic = document.getElementById("profile-pic");
-                 let inputFile = document.getElementById("file");
-            
-                 inputFile.onchange = function(){
-                    profilePic.src = URL.createObjectURL(inputFile.files[0]);
-                 }
-            </script>
-        </div>
-        <div class="comment">
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="eb4e3bf3-3ff4-41f0-9171-eeb00da75fcb">
-            <input type="text" id="name" name="Name:" placeholder="Name used/Amazina yawe wakoresheje..." required="required">
-            <label for="coment">After journey,you can add your comments and stars here:</label>
-            <textarea cols="40" rows="5" id="textarea" name="comment recieved" required></textarea>
-            <button class="myBtn3" id="myBtn1" type="submit">Comment</button>
-        </form>
-            <button class="myBtn1" onclick="add()">⭐/5</button>
-        <script>
-              document.getElementById("myBtn1").addEventListener("click",function(){
-                alert("THANK YOU!🙏for using our service!!!");
-              })
-              function add(){
-               let text = document.getElementById("textarea").value += "⭐";
-              }
-        </script>
-        </div>
-</div>
+	<header>
+		<div class="menu">
+			<a href="#first">home</a>
+			<a href="#second">about</a>
+			<a href="#third">contact</a>
+		</div>
+	</header>
+	<main>
+	<section id="first">
+		<p>hello</p>
+	</section>
+	<section id="second">
+		<p>hello</p>
+	</section>
+	<section id="third">
+		<p>hello</p>
+	</section>
+</main>
 </body>
 </html>

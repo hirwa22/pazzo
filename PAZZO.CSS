@@ -1,0 +1,118 @@
+body{
+	padding: 20px;
+	box-sizing: inherit;
+}
+header{
+	display: flex;
+	position: relative;
+	background-color: black;
+	border-radius: 11px;
+	padding: 2px;
+}
+header .logo1 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+}
+header .menu{
+	margin: 50px 200px;
+}
+header .menu a{
+	padding:7px;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+	font-family: "Arial",sans-serif;
+	text-decoration: none;
+}
+header .logo2 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 10px;
+}
+main .img-content img{
+	margin-left: 300px;
+	width: 600px;
+	height: 250px;
+	border-radius: 20px;
+	opacity: unset;
+	margin-top: 90px;
+}
+main .location-content{
+	display: flex;
+}
+main .location-content p{
+	font-size: 20px;
+	font-weight: 500;
+	border: 5px solid yellow;
+	border-radius: 20px;
+	padding: 10px;
+	width: 600px;
+	height: 80px;
+	margin-top: 150px;
+}
+main .location-content iframe{
+	    border:  5px solid yellow;
+	    border-radius: 10px;
+        width: 400px; 
+        height: 400px;
+} 
+main .manager-content{
+	text-align: center;
+}
+main .manager-content img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	animation: PAZZO 3s 3 linear;
+}
+@keyframes PAZZO{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+main .text-content p{
+	text-align: center;
+	font-weight: bold;
+}
+main .text-content ol{
+	margin-left: 400px;
+	font-weight: bold;
+}
+footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 15px;
+}
+footer h1{
+	font-size: 22px;
+}
+footer ul li{
+	font-weight: bold;
+	font-size: 20px;
+}
+footer .copyright p img{
+	width: 70px;
+	height: 50px;
+	padding: 5px;
+	border-radius: 10px;
+}
+        /*custom scrollbar*/ 
+        ::-webkit-scrollbar{
+            width: 15px; 
+        }
+        ::-webkit-scrollbar-track{
+            background: rgb(116, 100, 173);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: linear-gradient(rgb(255, 0, 0),rgb(0, 255, 0));
+            border-radius: 10px;
+            cursor: pointer;
+        }

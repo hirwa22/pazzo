@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" href="logo1.jpeg" type="image/x-icon">
+    <style>
+        body{
+            padding: 20px;
+        }
+        header{
+            display: flex;
+            position: relative;
+            background-color: black;
+            border-radius: 11px;
+            padding: 2px;
+        }
+        header .logo1 img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        header .menu{
+            margin: 50px 200px;
+        }
+        header .menu a{
+            padding:7px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            font-family: "Arial",sans-serif;
+            text-decoration: none;
+        }
+        header .logo2 img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        main .mubiligi6 img{
+            margin-left: 300px;
+            margin-top: 80px;
+            width: 600px;
+            height: 260px;
+            border-radius: 20px;
+        }
+        main .contact-contents p{
+            text-align: justify;
+            font-weight: 550;
+            font-size: 25px;
+        }
+        main .contact-contents ul li img{
+            width: 70px;
+            height: 50px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        main .contact-contents ul li{
+            font-weight: bold;
+	        font-size: 20px;
+        }
+        main .contact-contents ul li.m{
+            color: green;
+        }
+        main .form-content{
+            border: 3px solid black;
+            width: 520px;
+            height: 140vh;
+            padding: 10px;
+            border-radius: 20px;
+            margin-inline-start: 300px;
+        }
+        main .form-content form h4{
+            margin-left: 80px;
+            color: black;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        main .form-content form input{
+            width: 500px;
+            height: 30px;
+            border: 3px solid black;
+            color: black;
+            padding: 7px;
+            font-weight: 600;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        main .form-content form input:focus{
+            border: 3px solid blue;
+            background: lightgrey;
+        }
+        main .form-content form label{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        main .form-content form button{
+            width: 200px;
+            height: 50px;
+            border: none;
+            background: blue;
+            color: white;
+            padding: 3px 10px;
+            cursor: pointer;
+            border-radius: 30px;
+            box-shadow: 0 0 15px rgb(248, 247, 247);
+            margin-top: 30px;
+            margin-left: 40px;
+            font-weight: bold;
+            font-family: "algerian",sans-serif;
+            font-size: 35px;
+        }
+        main .form-content form button:hover{
+            transition: all 0.8s;
+            background: white;
+            color: blue;
+            box-shadow: 0 0 15px rgb(0, 0, 0);
+        }
+        footer{
+            margin-top: 100px;
+            background-color: black;
+            border-radius: 10px;
+        }
+        footer p{
+                text-align: center;
+                font-weight: bold;
+                font-size: 25px;
+                color: white;
+        }
+                /*custom scrollbar*/ 
+        ::-webkit-scrollbar{
+            width: 15px; 
+        }
+        ::-webkit-scrollbar-track{
+            background: rgb(116, 100, 173);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: linear-gradient(rgb(255, 0, 0),rgb(0, 255, 0));
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+		<div class="logo1">
+			<img src="logo1.jpeg">
+		</div>
+		<div class="menu">
+			<a href="index.html">Home</a>
+			<a href="about.html">About us</a>
+			<a href="staff.html">Staff</a>
+			<a href="education.html">Education</a>
+			<a href="announcement.html">Announcement</a>
+			<a href="contact.html">Contact us</a>
+		</div>
+		<div class="logo2">
+			<img src="logo2.jpg">
+		</div>
+	</header>
+    <main>
+        <div class="mubiligi6">
+            <img src="NO.jpg">
+        </div>
+        <div class="contact-contents">
+            <p>You can contact us through the following platforms:</p>
+            <ul type="square">
+                <li>TEL:+250 785511231/+250 787712575</li>
+                <li>EMAIL:<a href="mail to:https://mubiligitvet@gmail.com">mubiligitvet@gmail.com</a></li>
+                <li>P.O.Box.659,Butare,Rwanda</li>
+                <li class="m"><img src="capture1.PNG"><img src="capture2.PNG"><img src="capture3.PNG">MSGR.MUBILIGI TSS</li>
+            </ul>
+            <p>If you want to come to Msgr.MUBILIGI CATHOLIC TSS,you can register this platform:</p>
+            </div>
+            <div class="form-content">
+                <form method="POST" id="form">
+                    <h4>BASIC REGISTRATION FORM</h4>
+                    <input type="hidden" name="access_key" value="9d14f3c6-35ef-4dd7-9da2-77c13f136070">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="mother">Mother's name:</label><br>
+                    <input type="text" id="mother" name="mother" required><br>
+
+                    <label for="mo-tel">Mother's Tel No:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="father">Father's name:</label><br>
+                    <input type="text" id="father" name="father" required><br>
+
+                    <label for="fa-tel">Name:</label><br>
+                    <input type="text" id="fa-tel" name="fa-tel" required><br>
+
+                    <label for="district">District:</label><br>
+                    <input type="text" id="district" name="district" required><br>
+
+                    <label for="sector">Sector:</label><br>
+                    <input type="text" id="sector" name="sector" required><br>
+
+                    <label for="cell">Cell:</label><br>
+                    <input type="text" id="cell" name="cell" required><br>
+
+                    <label for="village">Village:</label><br>
+                    <input type="text" id="village" name="village" required><br>
+
+                    <button type="reset">RESET</button>
+                    <button type="submit">SUBMIT</button>
+                    <div id="result"></div>
+                </form>
+                <script>
+   const form = document.getElementById('form');
+   const result = document.getElementById('result');
+
+form.addEventListener('submit', function(e) {
+    const formData = new FormData(form);
+    e.preventDefault();
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
+});
+
+                </script>
+            </div>
+    </main>
+    <footer>
+        <p>copyright&copy;2024 all right reserved</p>
+    </footer>
+</body>
+</html>
